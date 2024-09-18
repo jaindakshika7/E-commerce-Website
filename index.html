@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<head>
+    <title>Home page</title>
+    
+    <style>
+
+        header{
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            border: 1px;
+            border-color: red;
+            border-style: solid;
+            float: left;
+            padding: 6px;
+          }
+        body{
+            padding: 0;
+            margin: 0%;
+        }
+        #brand{
+            margin: 0px;
+            padding: 0%;
+            float: left;
+            font-family: sans-serif;
+            margin-left: 24px;
+            
+        }
+        #tag_line{
+            margin: 0%;
+            padding: 0%;
+            float: right;  
+            margin-top: 10px ;
+            margin-right: 24px;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 106px;
+            background-color: blue;
+            float: left;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+        #search{
+            width: 400px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            font-size: 15px;
+            padding: 10px;
+
+        }
+        #btn{
+            width: 100px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        #menu{
+            width: 600px;
+            height: 30px;
+            float: right;
+            box-sizing: border-box;
+            border: 1px;
+
+        }
+        #menu_item{
+            width: 20%;
+            background-color: white;
+            text-align: center;
+        }
+        #a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            
+        }
+        section{
+            border: 1px;
+            width: 100%;
+            height: 1800px;
+            border-color: blue;
+            padding-left: 0px;
+            padding: 30px;
+            box-sizing: border-box;
+            border-style: solid;
+            margin-left: 0%;
+        }
+        #Address{
+            float: left;
+        }
+        #Order-online{
+            float: right;
+        }
+        #sweets-box{
+            width: 720px;
+            height: 550px;
+            box-sizing: border-box;
+            background-color: black;
+            margin-top: 30px;
+            padding: 25px;
+            align-self: left;
+            float: left;
+        }
+        #Our-Popular-sweets{
+            font-family: sans-serif;
+            color: aliceblue;
+            text-align:center;
+            font-size: 30px;
+            margin:0px;
+            padding: 0;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: white;
+            box-sizing: border-box;
+            
+        }
+        #rate_list_box{
+            width: 440px;
+            height: 480px;
+            box-sizing: border-box;
+            background-color: blue;
+            padding: 25px;
+            margin-left: 0%;
+            float: right;
+            margin-top: 13px;
+            
+
+        }
+        #rate_header{
+           height: 50px; 
+           background-color: black;
+           color: white;
+           text-align: center;
+           font-family: sans-serif;
+           font-size: 25px;
+        }
+        #rate_content{
+            background-color: blue;
+
+        }
+        #s_name{
+            color: white;
+            font-family: century gothic;
+            font-size: 22px;
+            padding: 10px;
+            border-bottom-width: 3px;
+            border-bottom-color: white;
+            border-bottom-style: solid;
+        }
+        #rate{
+            list-style: none;
+        }
+        fieldset{
+            width: 690px;
+            height: 550px;
+            float: left;
+            margin-top: 50px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        legend{
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        form{
+            font-family: sans-serif;
+            font-size: 17px;
+        }
+        #order-input{
+            width: 100%;
+            height: 35px;
+            box-sizing: border-box;
+            border-color: #ccc;
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 5px;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-color: #ccc;
+        }
+        #submit_btn{
+            padding: 10px;
+            font-size: 15px;
+            float: right;
+            border-color: #ccc;
+            border: 1px;
+            background-color:#ccc;
+        }
+        #abt_us{
+            width: 450px;
+            height: 528px;
+            float: right;
+            box-sizing: border-box;
+            border-color: #ccc;
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        #abt-title{
+            font-family: sans-serif;
+            
+        }
+        #abt_line{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            color: black;
+            text-align: justify;
+        
+        }
+        #M-sweets{
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #More-sweets{
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        #sweets{
+            width: 200px;
+            height: 250px;
+           border: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+            margin-right: 49px;
+            background-color: black;
+            box-sizing: border-box;
+        }
+        #sweets_end{
+            width: 200px;
+            height: 250px;
+           border: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+            background-color: black;
+            margin-left: 5px;
+
+        }
+        #M_img{
+            width: 180px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+        
+        }
+        #buy_btn{
+            padding: 10px;
+            font-size: 15px;
+            border-color: #ccc;
+            border: 1px;
+            background-color:#ccc; 
+        }
+       #abt_txt{
+        font-family: sans-serif;
+        font-size: 22px;
+        text-align: justify;
+       }
+       footer{
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+        float: left;
+        background-color: black;
+       }
+       #contact_us{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            padding: 10px;
+            padding-left: 30px;
+       }
+       #social_link{
+        width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: right;
+       }
+       #contact_title{
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: normal;
+       }
+       #contact_detail{
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        margin-bottom: 10px;
+        
+       }
+       #social_icon{
+        width: 70px;
+        border: none;
+       }
+    </style>
+</head>
+
+<body>
+
+<!--all headings are write here-->
+    <header>
+        <h1 id="brand">Sweetshop.com</h1>
+        <p id="tag_line">The world's largest sweet & bakery shop</p>
+    </header>
+
+    <!--create box-->
+    <nav>
+        <form>
+            <input type="search" id=search name="search" placeholder="Search your items here!">
+            <input type="submit"   id=btn name="submit" value="search">
+        </form>
+
+        <table id="menu">
+            <tr>
+                <td id="menu_item"><a href="index.html">Home</a></td>
+                <td id="menu_item"><a href="sweets.html">Sweets</a></td>
+                <td id="menu_item"><a href="bakeries.html">Bakeries</a></td>
+                <td id="menu_item"><a href="#abt_us">About us</a></td>
+                <td id="menu_item"><a href="#contact_us">Contact us</a></td>
+            </tr>
+        </table>
+    </nav>
+
+
+    <!--All main contains about website written here-->
+    <section>
+        <address id="Address"> Patel nagar,New Delhi,45999</address>
+        <address id="Order-online">Order online:+91 70679548848</address>
+    
+        
+    <div id="sweets-box" align="left">
+        
+        <h1 id="Our-Popular-sweets">Our Popular-sweets</h1>
+        <img src="images/sweets/a.jpeg" alt="a"/>
+        <img src="images/sweets/b.jpeg" alt="b"/>
+        <img src="images/sweets/c.jpeg" alt="c"/>
+        <img src="images/sweets/d.jpeg" alt="d"/>
+    
+    </div>
+        
+    <table id="rate_list_box">
+        <tr>
+            <td id="rate_header">Sweets Name</td>
+            <td id="rate_header">Sweets price</td>
+        </tr>
+        <tr>
+            <td id="rate_content">
+                <ol>
+                    <li id="s_name">Rasgulle</li>
+                    <li  id="s_name">Gulab jamun</li>
+                    <li  id="s_name">Laddu</li>
+                    <li  id="s_name">Ras-malai</li>
+                    <li  id="s_name">Bengali sweet</li>
+                    <li id="s_name">Ghewar</li>
+                    <li id="s_name">Kaju-katli</li>
+                    <li id="s_name">Shreekhand</li>
+                    <li id="s_name">Milk cake</li>
+                </ol>
+            </td>
+
+            <td id="rate_content">
+                <ol id="rate">
+                <li id="s_name">200/kg</li>
+                <li  id="s_name">100/kg</li>
+                <li  id="s_name">150/kg</li>
+                <li  id="s_name">350/kg</li>
+                <li  id="s_name">400/kg</li>
+                <li id="s_name">250/kg</li>
+                <li id="s_name">550/kg</li>
+                <li id="s_name">280/kg</li>
+                <li id="s_name">400/kg</li>
+            </ol>
+        </td>
+        </tr>
+
+    </table>
+    <fieldset id="form_box">
+                <legend>Order-online</legend>
+                <form>
+                    Buyer Name<br><input type="text" name="Buyer Name" id="order-input"><br><br>
+                    Mobile No.<br><input type="number" name="Mobile no." id="order-input"><br><br>
+                    Choose sweet<br>
+                    <select id="order-input">
+                        <option value="Gulab Jamun">Gulab Jamun</option>
+                        <option value="Ras-Malai">Ras-Malai</option>
+                        <option value="Laddu">Laddu</option>
+                        <option value="Rasgulle">Rasgulle</option>
+                        <option value="Ghever">Ghever</option>
+                        <option value="Bengali sweet">Bengali sweet</option>
+                    </select><br><br>
+                    Quantity<br>
+                    <input type="text" name="Quantity" id="order-input"><br><br>
+                    Address<br>
+                    <textarea name="Address"></textarea><br><br>
+                    <input type="submit" value="Order Now!" id="submit_btn">
+
+                    </form>
+    </fieldset>
+    <div id="abt_us">
+        <h1 align="center" id="abt-title" >About us</h1>
+        <hr>
+        <p id="abt_txt">We are just two gals with an itch to bake beautiful and delicious treats with you in mind, offering regular, GF, and low carb treats. Fresh baked homemade sweets are made right in our kitchen and put straight into your hands. We're dedicated to putting a smile on your face and giving you a taste of how much our Lord Jesus loves you!Handcrafted Goods
+            We are a home bakery.  What we make comes from a lot of experimenting in the kitchen.  We have fun with the baking process and pray you will be met with joy on the first bite.  There's nothing like tasting something that is as delicious as it looks!</p>
+        
+    </div>
+    <div id="M-sweets">
+        <h1 align="center" id="More-sweets">More Sweets</h1>
+    </div>
+    <div id="sweets">
+        <img src="images/sweets/e.jpg" id="M_img">
+        <center><a href="#form_box"><button id="buy_btn">Buy Now!</button ></a></center>
+        
+    </div>
+    <div id="sweets">
+        <img src="images/sweets/f.jpeg" id="M_img">
+        <center><a href="#form_box"><button id="buy_btn">Buy Now!</button></a></center>
+    </div>
+    <div id="sweets">
+        <img src="images/sweets/g.jpg" id="M_img">
+        <center><a href="#form_box"><button id="buy_btn">Buy Now!</button></a></center>
+    </div>
+    <div id="sweets">
+        <img src="images/sweets/h.jpeg" id="M_img">
+        <center><a href="#form_box"><button id="buy_btn">Buy Now!</button></a></center>
+    </div>
+    <div id="sweets">
+        <img src="images/sweets/i.jpg" id="M_img">
+        <center><a href="#form_box"><button id="buy_btn">Buy Now!</button></a></center>
+    </div>
+    <div id="sweets_end">
+        <img src="images/sweets/j.jpeg" id="M_img">
+        <center><a href="#form_box"><button id="buy_btn">Buy Now!</button></a></center>
+    </div>
+    
+    </section>
+
+    <!--bottom part --> 
+    <footer>
+        <div id="contact_us">
+            <h1 id="contact_title">Contact us</h1>
+            <address id="contact_detail">website:sweetshop.com</address>
+            <address id="contact_detail">phone no.:7067951854</address>
+            <address id="contact_detail">Address:Patel nagar,Delhi</address>
+            <address id="contact_detail">Sweetshopgmail.com</address>
+        </div>
+        <div id="social_link">
+            <h1 id="contact_title">Follow us</h1>
+            <img src="images/socialmedia icons/facebook (1).png" id="social_icon">
+            <img src="images/socialmedia icons/linkden (1).png" id="social_icon">
+            <img src="images/socialmedia icons/twitter.png" id="social_icon">
+        </div>
+
+    </footer>
+
+
+
+</body>
